@@ -40,18 +40,18 @@ function Form() {
     // alert(`Hello ${userName}`);
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setUserName('');
-    setPassword('');
+    setName('');
+    setMessage('');
     setEmail('');
   };
 
   return (
     <div>
-      <p>Hello {name}</p>
+      <p>Guest, please fill out this form and press the submit button at the bottom when you are done.  This will send me an email and I will respond as soon as I can.</p>
       <form className="form">
       <input
           value={name}
-          name="Name"
+          name="name"
           onChange={handleInputChange}
           type="text"
           placeholder="Name"

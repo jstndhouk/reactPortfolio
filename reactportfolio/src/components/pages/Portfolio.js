@@ -1,25 +1,48 @@
 import React from 'react';
 import '../../styles/Body.css';
+import Project from './Project';
+let projectArr=[
+  {
+    name:'Lazy Layover',
+    github: 'https://github.com/jstndhouk/Lazy-Layover/',
+    deployed:'https://jstndhouk.github.io/Lazy-Layover/'
+  },
+  {
+    name:'JustFurPet',
+    github: 'https://github.com/jstndhouk/justFurPets',
+    deployed:'https://just-fur-pets.herokuapp.com/api/pet/'
+  },
+  {
+    name:'Weather Dashboard',
+    github: 'https://github.com/jstndhouk/Weather-Dashboard',
+    deployed:'https://jstndhouk.github.io/Weather-Dashboard/'
+  },
+  {
+    name:'Note-Taker',
+    github: 'https://github.com/jstndhouk/Notes-Generator',
+    deployed:'https://notes-generator1.herokuapp.com/'
+  },
+  {
+    name:'ReadMe Generator',
+    github: 'https://github.com/jstndhouk/README-Generator',
+    deployed:'https://jstndhouk.github.io/Daily-Scheduler/'
+  },
+  {
+    name:'My Professional Portfolio',
+    github: 'https://github.com/jstndhouk/Professional-Portfolio"',
+    deployed:'https://jstndhouk.github.io/Professional-Portfolio/'
+  }
+
+]
 
 
-export default function Portfolio() {
+
+export default function Portfolio(props) {
   return (
     <div classname='portfolio'>
-      <h1>Blog Page</h1>
+      <h1>Portfolio</h1>
       <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
+        {projectArr.map((project)=> <Project name={project.name} github={project.github} deployed={project.deployed}/>)}
       </p>
     </div>
   );

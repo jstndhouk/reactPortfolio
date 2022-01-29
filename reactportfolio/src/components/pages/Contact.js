@@ -1,12 +1,12 @@
 import React from 'react';
 import '../../styles/Body.css';
-import '../Form/index'
+import Form from '../Form';
 
 export default function Contact() {
   return (
     <div>
       <h1>Contact Page</h1>
-      return <Form />;
+      <Form />;
     </div>
   );
 }

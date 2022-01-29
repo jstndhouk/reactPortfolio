@@ -1,22 +1,20 @@
 import React from 'react';
 import '../../styles/Body.css';
-import mePhoto from '../../images/projec.jpg'
+import placeholder from '../../images/project-placeholder.png'
 
 
-export default function AboutMe() {
+export default function Project({name, github, deployed}) {
   return (
-    <div classname='aboutMe'>
-    <card id="Project1">
+    <div className='project'>
                 <div class='projectTitleContainer'>
-                    <h4 id='mainProjectTitle'>Lazy-Layover</h4>
+                    <h4 id='mainProjectTitle'>{name}</h4>
                 </div>
-                <img class='appSnippet' src=./assets/images/LazyLayoverSnippet.png width="500px" height="200px"
-                    alt="A screenshot of Lazy-Layover landing page" />
-                <a href="https://jstndhouk.github.io/Lazy-Layover/" id='bigProjectLinks' target="_blank">View the
+                <img class='appSnippet' src={placeholder} width="200px" height="200px"
+                    alt="A placeholder of the project" />
+                <a href={github} id='bigProjectLinks' target="_blank" rel="noreferrer">View the
                     Deployed Application</a>
-                <a href="https://github.com/jstndhouk/Lazy-Layover/" id='bigProjectLinks' target="_blank">View the
+                <a href={deployed} id='bigProjectLinks' target="_blank" rel="noreferrer">View the
                     Codebase</a>
-            </card>
     </div>
   );
 }
