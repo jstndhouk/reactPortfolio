@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/Body.css';
 
 export default function Resume() {
   return (

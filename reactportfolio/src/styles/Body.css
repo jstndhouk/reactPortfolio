@@ -1,0 +1,13 @@
+.aboutMe, .portfolio, .contact, .resume
+{
+  background-image: url("https://www.wallpapertip.com/wmimgs/196-1965497_website-background-wallpaper-wood.jpg");
+}
+@supports (-webkit-text-stroke: 1px black) {
+.aboutMe{
+  padding-left: 50px;
+  color:rgb(0, 23, 128);
+  font-size:20px;
+  font-weight:400;
+
+}
+}

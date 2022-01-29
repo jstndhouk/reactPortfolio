@@ -1,0 +1,21 @@
+.name{
+ font-size: 40px;
+ padding:10px;
+ font-family: 'Comforter', cursive;
+ color:white;
+}
+
+header{
+  display:flex;
+  flex-direction: row;
+  background-color: black;
+  align-items: center;
+}
+
+.nav-item{
+  font-family: 'Lato', sans-serif;
+  color:white
+
+}
+
+

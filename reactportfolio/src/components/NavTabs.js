@@ -1,13 +1,15 @@
 import React from 'react';
-
+import '../styles/Header.css';
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
+    <header>
+    <h1 className='name'>Justin Houk</h1>
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
-          href="#Aboutme"
+          href="#aboutme"
           onClick={() => handlePageChange('AboutMe')}
           // This is a conditional (ternary) operator that checks to see if the current page is "Home"
           // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
@@ -18,7 +20,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <a
-          href="#Portfolio"
+          href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
           // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={currentPage === 'portfolio' ? 'nav-link active' : 'nav-link'}
@@ -47,6 +49,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
+    </header>
   );
 }
 

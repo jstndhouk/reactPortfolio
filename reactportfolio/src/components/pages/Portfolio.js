@@ -1,8 +1,10 @@
 import React from 'react';
+import '../../styles/Body.css';
+
 
 export default function Portfolio() {
   return (
-    <div>
+    <div classname='portfolio'>
       <h1>Blog Page</h1>
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
