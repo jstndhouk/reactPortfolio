@@ -14,3 +14,12 @@
   display: flex;
   flex-direction: column;
 }
+
+p{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+#portfolio{
+  padding-left:20px;
+}

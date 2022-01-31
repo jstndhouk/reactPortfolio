@@ -12,9 +12,9 @@ export default function Project({name, github, deployed}) {
                 <img class='appSnippet' src={placeholder} width="200px" height="200px"
                     alt="A placeholder of the project" />
                 <a href={github} id='bigProjectLinks' target="_blank" rel="noreferrer">View the
-                    Deployed Application</a>
-                <a href={deployed} id='bigProjectLinks' target="_blank" rel="noreferrer">View the
                     Codebase</a>
+                <a href={deployed} id='bigProjectLinks' target="_blank" rel="noreferrer">View the
+                Deployed Application</a>
     </div>
   );
 }

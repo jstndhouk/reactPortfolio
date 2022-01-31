@@ -7,7 +7,7 @@ export default function AboutMe() {
   return (
     <div className='aboutMe'>
       <h1>About Me</h1>
-      <img src={mePhoto} width="300px" height="375px" alt="A portrait of me, Justin Houk" />
+      <img src={mePhoto} width="275px" height="350px" alt="A portrait of me, Justin Houk" />
       <p>
       I'm Justin Houk and I am an eager full stack developer and am currently enrolled in Georgia Tech's Coding bootcamp slated to finish in February 2022.
     My approach to software development is 'creating the most simple solution for the most difficult problems'. A good software solution is concise, easy to interpret, and efficient.

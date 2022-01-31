@@ -39,7 +39,7 @@ let projectArr=[
 
 export default function Portfolio(props) {
   return (
-    <div classname='portfolio'>
+    <div id='portfolio'>
       <h1>Portfolio</h1>
       <p>
         {projectArr.map((project)=> <Project name={project.name} github={project.github} deployed={project.deployed}/>)}
