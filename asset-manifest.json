@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reactPortfolio/static/css/main.05cafc22.css",
+    "main.js": "/reactPortfolio/static/js/main.b94238ab.js",
+    "static/media/port.jpg": "/reactPortfolio/static/media/port.ff517f56a67effb9a68e.jpg",
+    "static/media/Instagram-Icon.png": "/reactPortfolio/static/media/Instagram-Icon.3d6c8f9c6e4bb23ce95e.png",
+    "index.html": "/reactPortfolio/index.html",
+    "main.05cafc22.css.map": "/reactPortfolio/static/css/main.05cafc22.css.map",
+    "main.b94238ab.js.map": "/reactPortfolio/static/js/main.b94238ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05cafc22.css",
+    "static/js/main.b94238ab.js"
+  ]
+}
